@@ -1,0 +1,12 @@
+- alias: "Alerta de temperatura alta"
+  trigger:
+    - platform: state
+      entity_id: sensor.temperatura
+  condition:
+    - condition: numeric_state
+      entity_id: sensor.temperatura
+      above: 30
+  action:
+    - service: notify.callmebot
+      data:
+        message: "¡Alerta! La temperatura es {{ states('sensor.temperatura') | float }}°C, supera los 30°C."

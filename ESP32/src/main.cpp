@@ -8,9 +8,9 @@
 
 // Update these with values suitable for your network.
 
-const char *ssid = "Monikabur";
-const char *password = "doky2011";
-const char *mqtt_server = "18.191.162.82";
+const char *ssid = "xxxxxxxxx";
+const char *password = "xxxxxxxxx";
+const char *mqtt_server = "xxxxxxxxxx";
 
 #define DHTPIN 27
 #define DHTTYPE DHT11
